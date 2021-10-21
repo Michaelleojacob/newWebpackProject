@@ -119,4 +119,8 @@ eslint-config-airbnb-base@latest eslint@^5.16.0 || ^6.8.0 || ^7.2.0 - eslint-plu
 "singleQuote": true
 }
 
-# newWebpackProject
+---
+
+.gitignore
+
+> touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status
