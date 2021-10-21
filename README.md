@@ -20,6 +20,10 @@
 
 ## ./node_modules/.bin/eslint --init
 
+## touch webpack.config.js
+
+{copy paste the webpack.config.js file}
+
 ---
 
 ### ? How would you like to use ESLint? …
