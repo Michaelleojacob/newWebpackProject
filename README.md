@@ -2,29 +2,25 @@
 
 ## npm install webpack webpack-cli --save-dev
 
-## mkdir src dist
-
-## touch script.js
-
-## package.json
-
-{"main": "script.js",}
-
-## npm install webpack webpack-cli --save-dev
-
 ## npm install --save-dev css-loader
 
-## npm install --save-dev html-loader
+## npm install style-loader --save
+
+## npm install html-loader style-loader --save
 
 ## npm install eslint --save-dev
 
-## ./node_modules/.bin/eslint --init
+## npm i --save-dev html-webpack-plugin
 
-## touch webpack.config.js
+## `or one liner:`
 
-{copy paste the webpack.config.js file}
+## npm install webpack webpack-cli css-loader html-loader eslint dotenv-webpack html-webpack-plugin --save-dev
 
----
+## mkdir src dist
+
+## touch src/index.html src/script.js package.json webpack.config.js .env
+
+# ./node_modules/.bin/eslint --init
 
 ### ? How would you like to use ESLint? …
 
@@ -72,10 +68,10 @@ The config that you've selected requires the following dependencies:
 
 eslint-config-airbnb-base@latest eslint@^5.16.0 || ^6.8.0 || ^7.2.0 - eslint-plugin-import@^2.21.2
 
-### ? Would you like to install them now with npm? › No / Yes`
+### ? Would you like to install them now with npm? No / › Yes`
 
-- `❯ No`
-- yes
+- No
+- `❯ Yes`
 
 - You will also be asked to install extra packages. Choose `yes`.
 
@@ -128,3 +124,23 @@ eslint-config-airbnb-base@latest eslint@^5.16.0 || ^6.8.0 || ^7.2.0 - eslint-plu
 .gitignore
 
 > touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status
+
+## package.json "scripts":{}
+
+{
+"test": "echo \"Error: no test specified\" && exit 1",
+"watch": "webpack --watch",
+"setup": "git subtree push --prefix dist/index.html origin gh-pages",
+"deploy": "git subtree push --prefix dist origin gh-pages",
+"build": "webpack"
+}
+
+## in webpack.config.js:
+
+{"main": "script.js",}
+
+## {copy paste the webpack.config.js file}
+
+## .env value=key
+
+## ^ no quotes

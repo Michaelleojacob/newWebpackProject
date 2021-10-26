@@ -4,17 +4,23 @@
   "description": "how to start a new webpack project with eslint",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "setup": "git subtree push --prefix dist/index.html origin gh-pages",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "Michael Jacob",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.4.0",
+    "dotenv-webpack": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.25.2",
     "html-loader": "^3.0.0",
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.59.1",
     "webpack-cli": "^4.9.1"
   }
