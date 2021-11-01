@@ -14,11 +14,11 @@
 
 ## `or one liner:`
 
-## npm install webpack webpack-cli css-loader html-loader eslint dotenv-webpack html-webpack-plugin --save-dev
+## npm i webpack webpack-cli css-loader html-loader eslint dotenv-webpack html-webpack-plugin eslint prettier eslint-config-prettier eslint-plugin-prettier
 
 ## mkdir src dist
 
-## touch src/index.html src/script.js package.json webpack.config.js .env
+## touch src/index.html src/script.js package.json webpack.config.js .env .prettierrc
 
 # ./node_modules/.bin/eslint --init
 
@@ -124,6 +124,8 @@ eslint-config-airbnb-base@latest eslint@^5.16.0 || ^6.8.0 || ^7.2.0 - eslint-plu
 .gitignore
 
 > touch .gitignore && echo "node_modules/" >> .gitignore && git rm -r --cached node_modules ; git status
+
+> touch .gitignore && echo "node_modules/" && echo ".env" >> .gitignore && git rm -r --cached node_modules ; git status
 
 ## package.json "scripts":{}
 
